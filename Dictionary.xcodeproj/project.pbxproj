@@ -32,6 +32,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044A01532D6812A500845757 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				04A72B3F2D6804AF006D1317 /* DictionaryApp.swift */,
+				04A72B412D6804AF006D1317 /* ContentView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		044A01542D6812B900845757 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		044A01552D6812E900845757 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				044A01582D6812F900845757 /* ViewModels */,
+				044A01572D6812F300845757 /* Views */,
+				044A01562D6812EF00845757 /* Models */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		044A01562D6812EF00845757 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		044A01572D6812F300845757 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		044A01582D6812F900845757 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		044A01592D68131900845757 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		04A72B332D6804AE006D1317 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +105,10 @@
 		04A72B3E2D6804AF006D1317 /* Dictionary */ = {
 			isa = PBXGroup;
 			children = (
-				04A72B3F2D6804AF006D1317 /* DictionaryApp.swift */,
-				04A72B412D6804AF006D1317 /* ContentView.swift */,
+				044A01592D68131900845757 /* Services */,
+				044A01552D6812E900845757 /* Scenes */,
+				044A01542D6812B900845757 /* Coordinators */,
+				044A01532D6812A500845757 /* Core */,
 				04A72B432D6804B2006D1317 /* Assets.xcassets */,
 				04A72B452D6804B2006D1317 /* Preview Content */,
 			);

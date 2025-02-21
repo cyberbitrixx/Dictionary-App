@@ -17,7 +17,7 @@
 ### Technology
 * Swift
 * SwiftUI - for majority of the app's elements (authentication, user profile, settings, words list etc.)
-* UIKit - for more complex solutions (flashcards implementation, words audio playback etc.)
+* UIKit - for more complex solutions (coordinators, flashcards implementation, words audio playback etc.)
 
 ### Architecture
 * MVVM-C

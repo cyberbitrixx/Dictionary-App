@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041BB7A32D6D9C48006D98EE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB7A22D6D9C48006D98EE /* AppCoordinator.swift */; };
+		041BB7AA2D6D9DAE006D98EE /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB7A92D6D9DAE006D98EE /* AuthCoordinator.swift */; };
+		0494E69C2D77D358003652EA /* CoordinatorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494E69B2D77D358003652EA /* CoordinatorProtocols.swift */; };
 		04A72B402D6804AF006D1317 /* DictionaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A72B3F2D6804AF006D1317 /* DictionaryApp.swift */; };
 		04A72B422D6804AF006D1317 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A72B412D6804AF006D1317 /* ContentView.swift */; };
 		04A72B442D6804B2006D1317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A72B432D6804B2006D1317 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041BB7A22D6D9C48006D98EE /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		041BB7A92D6D9DAE006D98EE /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		0494E69B2D77D358003652EA /* CoordinatorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocols.swift; sourceTree = "<group>"; };
 		04A72B3C2D6804AF006D1317 /* Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A72B3F2D6804AF006D1317 /* DictionaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryApp.swift; sourceTree = "<group>"; };
 		04A72B412D6804AF006D1317 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041BB7A42D6D9CA2006D98EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0494E69B2D77D358003652EA /* CoordinatorProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		044A01532D6812A500845757 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -44,6 +58,9 @@
 		044A01542D6812B900845757 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				041BB7A42D6D9CA2006D98EE /* Protocols */,
+				041BB7A22D6D9C48006D98EE /* AppCoordinator.swift */,
+				041BB7A92D6D9DAE006D98EE /* AuthCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -193,7 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041BB7A32D6D9C48006D98EE /* AppCoordinator.swift in Sources */,
 				04A72B422D6804AF006D1317 /* ContentView.swift in Sources */,
+				0494E69C2D77D358003652EA /* CoordinatorProtocols.swift in Sources */,
+				041BB7AA2D6D9DAE006D98EE /* AuthCoordinator.swift in Sources */,
 				04A72B402D6804AF006D1317 /* DictionaryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

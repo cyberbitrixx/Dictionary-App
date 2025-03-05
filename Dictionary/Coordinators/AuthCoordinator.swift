@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+class AuthCoordinator: Coordinator {
+    func start() {
+//        grandchild Coordinator initialization goes here
+    }
+    
+    func coordinatorDidFinish(_ coordinator: any Coordinator) {
+        <#code#>
+    }
+    
+    var finishDelegate: CoordinatorFinishDelegate? = nil
+    
+    func finish() {
+        finishDelegate?.coordinatorDidFinish(self)
+    }
+}

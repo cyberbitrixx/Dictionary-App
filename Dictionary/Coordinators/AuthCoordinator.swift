@@ -13,7 +13,7 @@ class AuthCoordinator: Coordinator {
     }
     
     func coordinatorDidFinish(_ coordinator: any Coordinator) {
-        <#code#>
+//        <#code#>
     }
     
     var finishDelegate: CoordinatorFinishDelegate? = nil

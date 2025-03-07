@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 
 
-class MainCoordinator: Coordinator {
+class MainCoordinator: CompositionCoordinator {
+    var childCoordinators: [Coordinator] = []
+    
     func start() {
         <#code#>
     }
@@ -21,7 +23,10 @@ class MainCoordinator: Coordinator {
     var finishDelegate: (any CoordinatorFinishDelegate)?
     
     func coordinatorDidFinish(_ coordinator: any Coordinator) {
-        <#code#>
+        if let index = childCoordinators.firstIndex(where: { $0 === coordinator }) {
+            childCoordinators.remove(at: index)
+        }
+            
     }
     
     

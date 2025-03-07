@@ -8,7 +8,8 @@
 import Foundation
 import UIKit
 
-class AppCoordinator: Coordinator {
+/// First Coordinator in hierarchy. Take away navigation esponsibility from AppDelegate and SceneDelegate, and setup window and root view controller. Initiate Main Coordinator flow
+class AppCoordinator: CompositionCoordinator {
     
     private let window: UIWindow?
     private let navigationController: UINavigationController
@@ -29,10 +30,13 @@ class AppCoordinator: Coordinator {
 
         
     func start() {
-        var authCoordinator = AuthCoordinator()
-        authCoordinator.finishDelegate = self
-        childCoordinators.append(authCoordinator)
-        authCoordinator.start()
+//        Check if user is authenticated -> fetch user profile from Firebase and push Home screen with him being logged in || if user is not logged in push Home screen anyway but without fetched user profile (UserDefaults persist and fetch the data locally in that case)
+        
+//        Initialize MainCoordinator flow (might need to initialize a different coordinator)
+        let mainCoordinator = MainCoordinator()
+        mainCoordinator.finishDelegate = self
+        childCoordinators.append(mainCoordinator)
+        mainCoordinator.start()
     }
     
     func finish() {
@@ -41,7 +45,13 @@ class AppCoordinator: Coordinator {
     }
     
     func coordinatorDidFinish(_ coordinator: any Coordinator) {
-//        Check if user is authenticated -> fetch user profile from Firebase and push Home screen with him being logged in || if user is not logged in push Home screen anyway but without fetched user profile (UserDefaults persist and fetch the data locally in that case)
+        if let index = childCoordinators.firstIndex(where: { $0 === coordinator }) {
+            childCoordinators.remove(at: index)
+        }
         
+//        Decide what flow to begin
+//        if coordinator is AuthCoordinator {
+//            startMainFlow()
+//        }
     }
 }

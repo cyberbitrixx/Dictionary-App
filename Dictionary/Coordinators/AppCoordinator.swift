@@ -44,6 +44,8 @@ class AppCoordinator: CompositionCoordinator {
 //        The method exists here to conform to Coordinator protocol
     }
     
+    /// Remove coordinator from coordinators array once finished
+    /// - Parameter coordinator: a coordinator we're trying to remove
     func coordinatorDidFinish(_ coordinator: any Coordinator) {
         if let index = childCoordinators.firstIndex(where: { $0 === coordinator }) {
             childCoordinators.remove(at: index)

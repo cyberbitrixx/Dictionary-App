@@ -13,11 +13,11 @@ class MainCoordinator: CompositionCoordinator {
     var childCoordinators: [Coordinator] = []
     
     func start() {
-        <#code#>
+//        <#code#>
     }
     
     func finish() {
-        <#code#>
+//        <#code#>
     }
     
     var finishDelegate: (any CoordinatorFinishDelegate)?

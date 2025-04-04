@@ -10,7 +10,6 @@
 
 ### Potential languages addition
 * Japanese
-* Russian (?)
 * Ukrainian
 * Arabic
 * German

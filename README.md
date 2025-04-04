@@ -4,6 +4,7 @@
 
 ### Languages available for learning (MVP)
 * English
+* Russian
 * French
 * Mandarin Chinese
 

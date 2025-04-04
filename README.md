@@ -26,3 +26,4 @@
 ### Data Storage & Authentication
 * Firebase Authentication - user authentication
 * Firebase Firestore - synchronising user-specific data across devices, offline data persistence
+* Uset Defaults - local data persistence if user is not authenticated yet and doesn't have an account

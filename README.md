@@ -1,4 +1,5 @@
 # Dictionary (work name)
+🛠 ⚙️ Work in progress...
 
 ## Specifications
 

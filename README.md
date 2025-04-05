@@ -1,5 +1,5 @@
 # Dictionary (work name)
-[*...*the sound of a hammer hitting an anvil like in a video game**]
+[**..*you hear the sound of a hammer hitting an anvil like in a video game**...*]
 
 🛠 ⚙️ Work in progress...
 

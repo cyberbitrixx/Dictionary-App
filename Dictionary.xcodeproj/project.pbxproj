@@ -29,6 +29,8 @@
 		0494E69C2D77D358003652EA /* CoordinatorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494E69B2D77D358003652EA /* CoordinatorProtocols.swift */; };
 		04A72B442D6804B2006D1317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A72B432D6804B2006D1317 /* Assets.xcassets */; };
 		04A72B472D6804B2006D1317 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A72B462D6804B2006D1317 /* Preview Assets.xcassets */; };
+		04E597B02D9D2F720089D52F /* UserAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E597AF2D9D2F720089D52F /* UserAuthService.swift */; };
+		04E597B22D9D39880089D52F /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E597B12D9D39880089D52F /* AuthServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		04A72B3C2D6804AF006D1317 /* Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A72B432D6804B2006D1317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A72B462D6804B2006D1317 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04E597AF2D9D2F720089D52F /* UserAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthService.swift; sourceTree = "<group>"; };
+		04E597B12D9D39880089D52F /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				0494E69B2D77D358003652EA /* CoordinatorProtocols.swift */,
+				04E597B12D9D39880089D52F /* AuthServiceProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			children = (
 				0404E7EE2D8A707000CA742C /* FirebaseConfig */,
 				0404E7ED2D8A703400CA742C /* DataManager */,
+				04E597AF2D9D2F720089D52F /* UserAuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -291,8 +297,10 @@
 				048A5B9C2D794B0300B199A3 /* MainCoordinator.swift in Sources */,
 				047DD3332D77DE8900DD4B38 /* SceneDelegate.swift in Sources */,
 				048A5B9A2D790FBF00B199A3 /* SwiftUIView.swift in Sources */,
+				04E597B02D9D2F720089D52F /* UserAuthService.swift in Sources */,
 				0404E7F42D8BB18400CA742C /* User.swift in Sources */,
 				0404E7F62D8BB24000CA742C /* Dictionary.swift in Sources */,
+				04E597B22D9D39880089D52F /* AuthServiceProtocol.swift in Sources */,
 				04722C3C2D9684B400D30C2F /* DictionarySection.swift in Sources */,
 				041BB7A32D6D9C48006D98EE /* AppCoordinator.swift in Sources */,
 				0494E69C2D77D358003652EA /* CoordinatorProtocols.swift in Sources */,

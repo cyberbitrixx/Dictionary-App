@@ -17,4 +17,5 @@ struct User: Codable, Identifiable {
 //    MARK: - To track users activity, login attempts for security purposes, statistics etc. (beyond MVP)
 //    let lastLoginDate: Date
 //    let dailyStreakDays: String
+//    let isGuest: Bool // A flag if user is not authenticated and we're creating a guest user in AppCoordinator (later)
 }

@@ -11,5 +11,5 @@ import Foundation
 protocol AuthServiceProtocol {
     func isUserLoggedIn() -> Bool
     func getCurrentUser() -> User?
-    func logout()
+    func logout() -> Bool
 }

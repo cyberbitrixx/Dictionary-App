@@ -16,7 +16,7 @@ class AuthService: AuthServiceProtocol {
         return Auth.auth().currentUser != nil
     }
     
-    /// If user is logged in - get user object from Firebase and map to the app's User data model
+    /// If user is logged in - get user object from Firebase and map to the app's User data model (by calling converFirebaseUserToAppUser method)
     /// - Returns: User object
     func getCurrentUser() -> User? {
 //        Safely unwrap the optional user and if there is no value - finish function execution early, to not cause the app crash
@@ -24,27 +24,35 @@ class AuthService: AuthServiceProtocol {
             return nil
         }
         
-//        Safely unwrap optional fields
-        guard let displayName = firebaseUser.displayName,
-              let email = firebaseUser.email,
-              let creationDate = firebaseUser.metadata.creationDate else {
-            return nil
-        }
+        return convertFirebaseUserToAppUser(firebaseUser)
+    }
+    
+    
+    func convertFirebaseUserToAppUser(_ firebaseUser: FirebaseAuth.User) -> User? {
+        //        Safely unwrap optional fields
+                guard let displayName = firebaseUser.displayName,
+                      let email = firebaseUser.email,
+                      let creationDate = firebaseUser.metadata.creationDate else {
+                    return nil
+                }
         
-//        Transform Firebase User into app's User data model
-        let user = User(id: firebaseUser.uid, displayName: displayName, email: email, createDate: creationDate)
+        //        Transform Firebase User into app's User data model
+                let user = User(id: firebaseUser.uid, displayName: displayName, email: email, createDate: creationDate)
+                
+                return user
         
-        return user
     }
     
     /// Method to log out the user
 //    MARK: - Log out errors should be handled better in the future but for now since it's not being used it works
-    func logout(){
+    func logout() -> Bool {
         do {
             try Auth.auth().signOut()
             print("Signed out successfully")
+            return true
         } catch {
-            print("Sign out error: \(error.localizedDescription)")
+            print("AuthService logout failed: \(error.localizedDescription)")
+            return false
         }
     }
 

@@ -13,6 +13,7 @@ class AppCoordinator: CompositionCoordinator {
     
     private let window: UIWindow?
     private let navigationController: UINavigationController
+    
     var childCoordinators: [Coordinator] = []
     var finishDelegate: CoordinatorFinishDelegate?
 
